@@ -1,0 +1,26 @@
+<!-- <app-root>Loading...</app-root> -->
+<div class="col-xs-12 col-md-6 pull-left">
+<button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addNew">Add New</button>
+
+
+<table class="table table-striped">
+  <thead class="thead-inverse">
+  <tr>
+    <th>Track</th>
+    <th>Title</th>
+    <th>Duration</th>
+    <th>Artist</th>
+  </tr>
+  </thead>
+<tbody>
+<tr *ngFor="let song of songs" (click)="onSelect(song)">
+  <th scope="row">{{song.track}}</th>
+  <td>{{song.title}}</td>
+  <td>{{song.duration}}</td>
+  <td>{{song.artist}}</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<song-detail [song]="selectedSong"></song-detail>

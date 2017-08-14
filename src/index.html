@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>Databases of Song</title>
+	<nav class="navbar navbar-inverse">
+	<a class="navbar-brand" href="#">Database</a>
+	</div>
+	</nav>
+</head>
+<body>
+
+<app-root>Loading...</app-root>
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Modal Box -->
+<div id="addNew" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+
+	<div class="modal-content">
+	<form class="form-horizontal">
+		<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		<h4 class="modal-title"><b>Add New Song</b></h4>
+		</div>
+		<div class="modal-body">
+			<div class="form-group row">
+			<label for="songTitle" class="col-lg-2 control-label">Title</label>
+			<div class="col-lg-10">
+			<input class="form-control" type="text" id="songTitle">
+			</div>
+			</div>
+
+			<div class="form-group row">
+			<label for="songDuration" class="col-lg-2 control-label">Duration</label>
+			<div class="col-lg-10">
+			<input class="form-control" type="text" id="songDuration">
+			</div>
+			</div>
+
+			<div class="form-group row">
+			<label for="songArtist" class="col-lg-2 control-label">Artist</label>
+			<div class="col-lg-10">
+			<input class="form-control" type="text" id="songArtist">
+			</div>
+			</div>
+
+			<div class="form-group row">
+			<label for="songDescription" class="col-lg-2 control-label">Description</label>
+			<div class="col-lg-10">
+			<textarea class="form-control" rows="8" id="songDescription"></textarea>
+			</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+		<button class="btn btn-success" type="submit">Add</button>
+		</div>
+	</form>
+	</div>
+</div>
+
+</body>
+</html>
